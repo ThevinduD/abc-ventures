@@ -1,3 +1,5 @@
+export const revalidate = 0;
+
 import Image from 'next/image'
 import React from 'react'
 import { FaTrashCan } from 'react-icons/fa6'
@@ -5,13 +7,11 @@ import { playfair } from '../layout'
 import { getCollection } from './../../lib/db.js'
 
 const page = async () => {
-    const cartCollection = await getCollection('cart');
+    const cartCollection = await getCollection('cart', { cache: 'no-store' });
         
     let cart = [];
-    if (cartCollection) {
-        cart = await cartCollection.find({}).toArray();
-    } else {
-    }
+    if (cartCollection) cart = await cartCollection.find({}).toArray();
+     
 
   return (
     <div className='flex flex-col gap-5 p-20'>

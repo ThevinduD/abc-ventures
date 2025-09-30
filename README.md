@@ -1,36 +1,51 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# ABC Ventures Restaurant Management System
+
+## Overview
+
+This is an Restaurant management system designed with scalability, performance, and security in mind, the dashboard empowers users to reserve tables, order foods manage, and contact support with ease. 
+
+Built using modern web technologies like Next.js App Router and JavaScript, the application features dynamic data handling, and a User friendly interface that adapts beautifully. Integrated with a cloud-based MongoDB Atlas database, it ensures reliable data storage and fast queries.
+
+## Features 
+
+- **User-Friendly Navigation:** Simple and intuitive navigation structure for ease of use.
+- **Complete CRUD Functionality:** Create, update, and delete order records effortlessly.
+- **Real-Time Updates:** Orders and reservations sync instantly, giving users live feedback and updates.
+
+## Technologies 
+
+- **Frontend:** Built with React and Tailwind CSS for responsive, modern UI components. Developed using JavaScript.
+- **Backend:** Powered by Next.js, enabling full-stack capabilities and scalable backend logic.
+- **Database:** Integrated with cloud database using MongoDB Atlas for reliable and high-performance data storage.
+
+---
 
 ## Getting Started
+### Prerequisites
 
-First, run the development server:
+- Node.js (v18+)
+- npm or yarn
+- MongoDB Atlas database
 
+## Installation
+### Clone the Repository
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/ThevinduD/abc-ventures.git
+cd abc-ventures
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Install dependencies
+```bash 
+pnpm install
+# or
+yarn install
+```
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+### Run the development server
+```bash
+pnpm run dev
+# or
+yarn dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Open http://localhost:3000 in your browser to see the application.

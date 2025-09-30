@@ -6,13 +6,15 @@ const MealCard = ( { name, img, desc, price, font } ) => {
   return (
     <div>
         <div className="w-[340px] h-[250px]">
-            <Image
-                src={img}
-                alt="bannerimg"
-                width={800}
-                height={600}
-                className="object-cover w-full h-full rounded-tl-2xl rounded-br-2xl"
-            />
+            <Link href={`/${encodeURIComponent(name)}`}>
+                <Image
+                    src={img}
+                    alt="bannerimg"
+                    width={800}
+                    height={600}
+                    className="object-cover w-full h-full rounded-tl-2xl rounded-br-2xl cursor-pointer"
+                />
+            </Link>
         </div>
 
         <div className='py-3 flex justify-between'>

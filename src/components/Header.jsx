@@ -19,7 +19,7 @@ const Header = ( { playfair, poppins }) => {
         </div>
 
         <div className={`section-2 flex gap-10 text-sm justify-center tracking-wide items-center ${playfair.className}`}>
-            <a href="" className='hover:text-[#8a1739] hover:font-medium'>Home</a>
+            <a href="/" className='hover:text-[#8a1739] hover:font-medium'>Home</a>
             <a href="" className='hover:text-[#8a1739] hover:font-medium'>About</a>
             <a href="" className='hover:text-[#8a1739] hover:font-medium'>Restaurant</a>
             <a href="" className='hover:text-[#8a1739] hover:font-medium'>Services</a>

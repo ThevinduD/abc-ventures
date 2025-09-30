@@ -2,7 +2,8 @@
 
 ## Overview
 
-This is an Restaurant management system designed with scalability, performance, and security in mind, the dashboard empowers users to reserve tables, order foods manage, and contact support with ease. 
+This is an Restaurant management system designed with scalability, performance, and security in mind.
+This website empowers users to reserve tables, order foods manage, and contact support with ease. 
 
 Built using modern web technologies like Next.js App Router and JavaScript, the application features dynamic data handling, and a User friendly interface that adapts beautifully. Integrated with a cloud-based MongoDB Atlas database, it ensures reliable data storage and fast queries.
 
@@ -39,6 +40,13 @@ cd abc-ventures
 pnpm install
 # or
 yarn install
+```
+
+### Env File
+Setup a MongoDB Atlas cluster and put the access resources in a .env.local file
+```bash
+MONGODB_URI="your_db_uri"
+MONGODB_DB="your_dbName"
 ```
 
 ### Run the development server
